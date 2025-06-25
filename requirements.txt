@@ -1,0 +1,28 @@
+# Core language
+python>=3.10
+
+# Molecular processing
+rdkit-pypi==2023.9.6
+
+# Machine Learning Models
+scikit-learn==1.5.2
+xgboost==3.0.0
+faiss-cpu==1.7.2
+
+# Data I/O
+pyarrow==17.0.0
+pandas>=2.1
+numpy>=1.24
+
+# Deep Learning for MolE
+torch>=2.2
+transformers>=4.38
+tokenizers>=0.15
+
+# Visualization (for notebooks and analysis)
+matplotlib>=3.9
+seaborn>=0.13
+
+# Jupyter Support (optional)
+jupyterlab>=4.0
+notebook>=7.0
