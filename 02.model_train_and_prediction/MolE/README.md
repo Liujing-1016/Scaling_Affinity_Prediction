@@ -21,14 +21,14 @@ Although MolE is a public foundation model, this project focuses on its **adapta
   - Trained from scratch on my dataset
 - ✅ Designing **multi-metric evaluation** (MSE, AUC, etc.) to benchmark against traditional models (KNN, XGBoost, RF)
 - ✅ Analyzing the **effect of pretraining** in the context of sparse regression targets
-- ✅ Architecture-Level Exploration and Module Customization: 
+- ✅ **Architecture-Level Exploration and Module Customization: **
 In addition to applying the MolE model as released, I experimented with modifying several components of the architecture to better adapt it to the large-scale binding affinity prediction task. These explorations included:
 
-- **Alternative loss functions**: such as using Huber Loss instead of MSE to reduce sensitivity to outliers in sparse target labels.
-- **Prediction head modifications**: including adding a multi-layer perceptron (MLP) layer before output, or comparing shared vs. separate heads across tasks.
-- **Positional encoding schemes**: testing whether disabling or modifying positional encodings impacts model generalization on unordered SMILES strings.
-- **Attention mechanism variants**: adjusting the number of attention heads or exploring sparse vs. dense attention patterns to improve scalability on long inputs.
-- **Dropout and regularization**: tuning dropout rates and layer normalization configurations for better generalization in low-data settings.
+  - **Alternative loss functions**: such as using Huber Loss instead of MSE to reduce sensitivity to outliers in sparse target labels.
+  - **Prediction head modifications**: including adding a multi-layer perceptron (MLP) layer before output, or comparing shared vs. separate heads across tasks.
+  - **Positional encoding schemes**: testing whether disabling or modifying positional encodings impacts model generalization on unordered SMILES strings.
+  - **Attention mechanism variants**: adjusting the number of attention heads or exploring sparse vs. dense attention patterns to improve scalability on long inputs.
+  - **Dropout and regularization**: tuning dropout rates and layer normalization configurations for better generalization in low-data settings.
 
 Although not all configurations were retained as finalized scripts, this process reflects my ability to go beyond plug-and-play usage of foundation models. It demonstrates a solid understanding of model internals, the initiative to explore architectural tuning, and the capacity to connect model behavior with task-specific constraints.
 
