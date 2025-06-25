@@ -13,6 +13,10 @@ This project investigates the large-scale prediction of molecule–target bindin
 
 The models were evaluated on a sparse molecule–target interaction matrix derived from ChEMBL (774,357 molecules × 6,142 targets). Both the full dataset and a filtered subset (≥ 20 actives per target) were used for analysis under single-task and multi-task learning frameworks.
 
+> **Note**: Due to the large size of the original dataset and trained model files, they are **not included in this repository**.  
+> Instead, this project focuses on sharing the **core code, processing pipeline, training scripts, and evaluation logic** that enable full reproducibility when data and model checkpoints are available.
+
+
 ---
 
 ## Key Findings
