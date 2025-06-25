@@ -9,7 +9,7 @@
 
 ## Project Overview
 
-This project investigates the large-scale prediction of molecule–target binding affinity using machine learning models. Specifically, it compares three traditional algorithms—FAISS-enhanced K-Nearest Neighbors (KNN), Random Forest (RF), and XGBoost—with a modern deep learning foundation model, MolE, which is a Transformer-based architecture pretrained on molecular graphs.
+This project investigates the large-scale prediction of molecule–target binding affinity using machine learning models. Specifically, it compares three traditional algorithms—FAISS-enhanced K-Nearest Neighbors ([FAISS-KNN](https://engineering.fb.com/2017/03/29/data-infrastructure/faiss-a-library-for-efficient-similarity-search/)), online Random Forest (online RF), and XGBoost—with a modern deep learning foundation model, [MolE](https://doi.org/10.1038/s41467-024-53751-y), which is a Transformer-based architecture pretrained on molecular graphs .
 
 The models were evaluated on a sparse molecule–target interaction matrix derived from ChEMBL (774,357 molecules × 6,142 targets). Both the full dataset and a filtered subset (≥ 20 actives per target) were used for analysis under single-task and multi-task learning frameworks.
 
